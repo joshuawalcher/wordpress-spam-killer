@@ -51,7 +51,7 @@ $queries = array(
 	"DELETE FROM wp_comments WHERE comment_author LIKE '%video%';",
 	"DELETE FROM wp_comments WHERE comment_author LIKE '%phone%';",
 	"DELETE FROM wp_comments WHERE comment_content LIKE '%a href%';",
-	"DELETE FROM wp_comments WHERE comment_content LIKE '%http%';",
+	"DELETE FROM wp_comments WHERE comment_content LIKE '%http%';", //this guy is a little controversial. But I don't like comment links.
 	"DELETE FROM wp_commentmeta WHERE (SELECT COUNT(*) FROM wp_comments WHERE wp_comments.comment_ID = wp_commentmeta.comment_id) = 0;",
 );
 
